@@ -26,10 +26,9 @@ Run the following command on the terminal to install browser drivers for Chrome 
 npm install --save selenium-webdriver chromedriver geckodriver
 ```
 
-Go to test.js change location of file login.html to your location file.
-ex: my location of file login.html is D:/FPT Course/5 - Summer 2022/SWT301/Selenium-js/logins/login.html
+Selenium run domain https://selenium-js.web.app to test
 ```sh
-await driver.get("file:///D:/FPT Course/5 - Summer 2022/SWT301/Selenium-js/logins/login.html");
+await driver.get("https://selenium-js.web.app");
 ```
 
 ## Run test
@@ -42,7 +41,16 @@ node test.js
 Selenium automatic run login.html file
 Default of username and password:
 ```sh
+account 01:
 username = "admin";
+password = "1";
+
+account 02:
+username = "user";
+password = "1";
+
+account 03:
+username = "test";
 password = "1";
 ```
 - If username and password correct redirect to welcome page.
@@ -51,11 +59,10 @@ password = "1";
 
 Title of each page print in terminal.
 ```sh
-4 stasus of login:
-Status is: Welcom
-Status is: Wrong Password
-Status is: Wrong Username
-Status is: Wrong Username and Password
+3 stasus of login:
+Welcom
+Wrong Password
+Wrong Username
 ```
 > Note: You can change default account in login.js or test case in test.js
 
