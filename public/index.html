@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
 
-    <!--update the version number as needed -->
+    <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.8.3/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/9.8.3/firebase-auth-compat.js"></script>
@@ -24,14 +24,14 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 </head>
 
 <body>
     <form class="box" action="index.html" method="POST">
         <h1>Login</h1>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
         <input type="button" value="Login" id="submit" onclick="validate()" />
     </form>
 </body>
