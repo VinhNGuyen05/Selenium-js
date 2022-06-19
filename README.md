@@ -26,10 +26,13 @@ Run the following command on the terminal to install browser drivers for Chrome 
 npm install --save selenium-webdriver chromedriver geckodriver
 ```
 
-Selenium run domain https://selenium-js.web.app to test
+Project has 2 domain: to test
 ```sh
-await driver.get("https://selenium-js.web.app");
+https://selenium-js.web.app
+https://selenium-js.firebaseapp.com
 ```
+Selenium get domain of project to run
+await driver.get("https://selenium-js.web.app");
 
 ## Run test
 ```sh
