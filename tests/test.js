@@ -12,17 +12,18 @@ async function check(username, password, num) {
     await driver.findElement(By.id("submit")).click();
     //Verify the page title and princdt it
     var title = await driver.getTitle();
-    console.log('Status of test case ' + num + ' is:', title);
+    console.log('Status of test case ' + num + ' is: ' + title);
     await driver.quit();
+
 }
 
 function testCase() {
     check("admin", "1", 1);
-    check("user", "1", 2);
-    check("userasd", "2eqe", 3);
-    check("test", "2", 4);
-    check("test234", "1", 5);
-    check("test", "1", 6);
+    // check("user", "1", 2);
+    // check("userasd", "2eqe", 3);
+    // check("test", "2", 4);
+    // check("test234", "1", 5);
+    // check("test", "1", 6);
 }
 
 testCase()
