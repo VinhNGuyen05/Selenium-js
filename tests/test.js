@@ -1,29 +1,36 @@
 const { By, Key, Builder } = require("selenium-webdriver");
 require("chromedriver");
 
-async function check(username, password, num) {
-    //To wait for browser to build and launch properly
+// const testCase = [
+//     { username: "test", password: "123" },
+//     { username: "test", password: "132" },
+//     { username: "selenium", password: "123" },
+//     { username: "admin", password: "admin" }
+// ];
+
+async function check(username, password) {
+    var result;
     let driver = await new Builder().forBrowser("chrome").build();
-    //To fetch login from the browser.
     await driver.get("https://selenium-js.web.app");
-    //To send a search query by passing the value in searchString.
     await driver.findElement(By.id("username")).sendKeys(username, Key.RETURN);
     await driver.findElement(By.id("password")).sendKeys(password, Key.RETURN);
     await driver.findElement(By.id("submit")).click();
-    //Verify the page title and princdt it
     var title = await driver.getTitle();
-    console.log('Status of test case ' + num + ' is: ' + title);
+    if (title.localeCompare("Welcome") === 0) {
+        result = " : test valid";
+    } else {
+        result = " : test invalid";
+    }
+    console.log('---- username: ' + username + ' | password: ' + password + result);
     await driver.quit();
-
 }
 
-function testCase() {
-    check("admin", "1", 1);
-    // check("user", "1", 2);
-    // check("userasd", "2eqe", 3);
-    // check("test", "2", 4);
-    // check("test234", "1", 5);
-    // check("test", "1", 6);
+async function testCase() {
+    console.clear();
+    await check("admin", "123");
+    await check("user", "132");
+    await check("selenium", "123");
+    await check("admin", "admin");
 }
 
 testCase()
