@@ -1,8 +1,8 @@
 function validate() {
     var map = new Map();
-    map.set("admin", "1");
-    map.set("user", "1");
-    map.set("test", "1");
+    map.set("admin", "123");
+    map.set("user", "123");
+    map.set("test", "123");
 
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
