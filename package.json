@@ -3,5 +3,27 @@
     "chromedriver": "^102.0.0",
     "geckodriver": "^3.0.1",
     "selenium-webdriver": "^4.3.0"
-  }
+  },
+  "name": "selenium",
+  "description": "- Login page use file HTLM, CSS and JS\r - Test by Selenium-webdriver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinhNGuyen05/Selenium-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinhNGuyen05/Selenium-js/issues"
+  },
+  "homepage": "https://github.com/VinhNGuyen05/Selenium-js#readme"
 }

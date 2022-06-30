@@ -3,9 +3,9 @@ require("chromedriver");
 
 const testCase = [
     { username: "test", password: "1" },
-    { username: "admin", password: "1312" },
+    { username: "user", password: "123" },
     { username: "user", password: "1" },
-    { username: "admin", password: "admin" },
+    { username: "user", password: "user" },
     { username: "admin", password: "1" },
 ];
 //5 test case

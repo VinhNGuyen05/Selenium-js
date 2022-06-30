@@ -1,7 +1,7 @@
 function validate() {
     var map = new Map();
     map.set("admin", "1");
-    map.set("user", "1");
+    map.set("user", "123");
     map.set("test", "1");
 
     var username = document.getElementById("username").value;
