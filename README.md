@@ -26,7 +26,7 @@ Project use:
 [https://youtu.be/gee25TJ2d3I](https://youtu.be/gee25TJ2d3I)
 
 ## Guildline for deploy project:
-[Guidline](https://drive.google.com/file/d/1bfEQlbiP154HIvSUnAk_dkfTIv-2IoTL/view?usp=sharing)
+[Guidline](https://drive.google.com/file/d/1Ba_tPNzUrSH3YYXy6Qs6ZfyWYfEKpIXI/view?usp=sharing)
 
 ## Selenium with JavaScript
 ![selenium](https://user-images.githubusercontent.com/59761844/178297407-c4d30ce8-4bd7-4dd0-a63c-4dee1b372de4.png)
