@@ -1,4 +1,4 @@
-# SWT301 - Team 3
+# SWT301 - Team 4
 - Nguyễn Hữu Giàu
 - Nguyễn Hữu Vinh
 - Nguyễn Trọng Nguyên
